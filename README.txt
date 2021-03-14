@@ -56,7 +56,7 @@ GoAnimate Offline credits:
 | DaveAnimate2006          | Save Starters                    |
 | HoodedCube               | Visual Effects                   |
 
-These are unaffiliated people that they haven't directly done anything for the project (and probably don't even know it exists) but still deserve credit for their things. Kinda like a shoutout but in a project's readme. ***Please do not contact them about GoAniFire: Off Duty.***
+These are unaffiliated people that they haven't directly done anything for the project (and probably don't even know it exists) but still deserve credit for their things. Kinda like a shoutout but in a project's readme. ***Please do not contact them about GoAnimate Offline.***
 | Name               | Contribution                     |
 | ------------------ | -------------------------------- |
 | Vyond              | Creators of the themes we love   |
