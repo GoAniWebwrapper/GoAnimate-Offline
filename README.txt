@@ -1,8 +1,8 @@
-# GoAniFire: Off Duty
-After learning that GoAnimate (a project by VisualPlugin) would be shut down, GoAniFire: Off Duty was created. (simply called "Offline" for the rest of this page) Unlike the original project, Offline can not be shut down or "patched". You have the files all on your computer. This project is important for historical and archival purposes, as the ability to use this legacy editor and themes would be completely gone without it. Besides simply emulating the original Flash editor, some additional features and improvements have been made. And Offline will continue to get additional updates in the future.
+# GoAnimate Offline
+After learning that GoAnimate (a project by VisualPlugin) would be shut down, GoAnimate Offline was created. (simply called "Offline" for the rest of this page) Unlike the original project, Offline can not be shut down or "patched". You have the files all on your computer. This project is important for historical and archival purposes, as the ability to use this legacy editor and themes would be completely gone without it. Besides simply emulating the original Flash editor, some additional features and improvements have been made. And Offline will continue to get additional updates in the future.
 
 ## Running / Installation
-To start Offline on Windows, open start_goanifireoffduty.bat. It'll automate just about everything for you and, well, start GoAniFire: Off Duty. On your first run, you will likely need to right-click it and click "Run as Administrator". This allows it to properly install what it needs to run. After your initial run, you shouldn't need to do that again, you can start it as normal.
+To start Offline on Windows, open start_goanimateoffline.bat. It'll automate just about everything for you and, well, start GoAnimate Offline. On your first run, you will likely need to right-click it and click "Run as Administrator". This allows it to properly install what it needs to run. After your initial run, you shouldn't need to do that again, you can start it as normal.
 
 If you want to import videos and characters from the original Wrapper or any other clones of it, open its folder and drag the "_SAVED" folder into Offline's "wrapper" folder. If you have already made any videos or characters, this will not work. Please only import on a new install with no saved characters or videos, or take the "_SAVED" folder in Offline out before dragging the old one in. If you want to import character IDs from the original LVM, you can paste `&original_asset_id=[ID HERE]` at the end of the link for the matching character creator.
 
@@ -41,20 +41,20 @@ Original Wrapper credits:
 | CLarramore   | Bug fixes            |
 No members of the original team are officially working on Offline, even if they have contributed. Some members of the original team have asked to not be given credit, and they have been removed.
 
-Developers will have (D) on their name, to show they are officially working on GoAniFire: Off Duty. Everyone else has simply contributed something at some point.
-GoAniFire: Off Duty credits:
-| Name             | Contribution                     |
-| ---------------  | -------------------------------- |
-| TonyAniFire (D)  | GoAniFire: Off Duty              |
-| NathanTDA        | Logo                             |
-| Blukas/GoTube    | Import idea, Mega Comedy World 2 |
-| VisualPlugin     | Text to speech voices            |
-| Imageny          | Text to speech voices            |
-| creepyjokes2000  | Waveform fix, improved actions   |
-| JoshAnimate      | Headgear fix                     |
-| BluePeacocks     | Business Friendly Female CC      |
-| DaveAnimate2006  | Save Starters                    |
-| HoodedCube       | Visual Effects                   |
+Developers will have (D) on their name, to show they are officially working on GoAnimate Offline. Everyone else has simply contributed something at some point.
+GoAnimate Offline credits:
+| Name                     | Contribution                     |
+| ---------------          | -------------------------------- |
+| joseph the animator (D)  | GoAnimate Offline                |
+| NathanTDA                | Logo                             |
+| Blukas/GoTube            | Import idea, Mega Comedy World 2 |
+| VisualPlugin             | Text to speech voices            |
+| Imageny                  | Text to speech voices            |
+| creepyjokes2000          | Waveform fix, improved actions   |
+| JoshAnimate              | Headgear fix                     |
+| BluePeacocks             | Business Friendly Female CC      |
+| DaveAnimate2006          | Save Starters                    |
+| HoodedCube               | Visual Effects                   |
 
 These are unaffiliated people that they haven't directly done anything for the project (and probably don't even know it exists) but still deserve credit for their things. Kinda like a shoutout but in a project's readme. ***Please do not contact them about GoAniFire: Off Duty.***
 | Name               | Contribution                     |
