@@ -1,8 +1,8 @@
-:: GoAniFire: Off Duty Launcher
-:: Author: TonyAniFire
+:: GoAnimate Offline Launcher
+:: Author: joseph the animator #2292
 :: License: MIT
 set WRAPPER_VER=2.0
-title GoAniFire: Off Duty v%WRAPPER_VER% [Initializing...]
+title GoAnimate Offline v%WRAPPER_VER% [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -50,7 +50,7 @@ if not exist "utilities\checks" md utilities\checks
 if not exist "utilities\checks\disclaimer.txt" (
 	echo DISCLAIMER
   echo:
-	echo GoAniFire: Off Duty is a project to preserve the original GoAnimate flash-based themes.
+	echo GoAnimate Offline is a project to preserve the original GoAnimate flash-based themes.
 	echo We believe they should be archived for others to use and learn about in the future.
 	echo All business themes have been Added, please use Vyond Studio if you wish to get those.
 	echo This is still unlawful use of copyrighted material, but ^(in our opinion^) morally justifiable use.
@@ -59,17 +59,17 @@ if not exist "utilities\checks\disclaimer.txt" (
 	echo We do not wish to promote piracy, and we avoid distributing content that is still in use by GoAnimate Inc.
 	echo We have tried to reduce any harm we could do to GoAnimate Inc while making this project.
 	echo:
-	echo Excluding Adobe Flash and GoAnimate Inc's assets, GoAniFire: Off Duty is free/libre software.
+	echo Excluding Adobe Flash and GoAnimate Inc's assets, GoAnimate Offline is free/libre software.
 	echo You are free to redistribute and/or modify it under the terms of the MIT ^(aka Expat^) license,
 	echo except for some dependencies which have different licenses with slightly different rights.
 	echo Read the LICENSE file in Offline's base folder and the licenses in utilities/sourcecode for more info.
 	echo:
 	echo By continuing to use GoAniFire: Off Duty, you acknowledge the nature of this project, and your right to use it.
-	echo If you object to any of this, feel free to close GoAniFire: Off Duty now.
+	echo If you object to any of this, feel free to close GoAnimate Offline now.
 	echo You will be allowed to accept 20 seconds after this message has appeared.
 	echo: 
 	PING -n 21 127.0.0.1>nul
-	echo If you still want to use GoAniFire: Off Duty, press Y. If you no longer want to, press N.
+	echo If you still want to use GoAnimate Offline, press Y. If you no longer want to, press N.
 	:disclaimacceptretry
 	set /p ACCEPTCHOICE= Response:
 	echo:
@@ -84,8 +84,8 @@ if not exist "utilities\checks\disclaimer.txt" (
 )
 
 :: Welcome, Director Ford!
-echo GoAniFire: Off Duty
-echo A project from VisualPlugin adapted by TonyAniFire
+echo GoAnimate Offline
+echo A project from VisualPlugin adapted by Joseph Animate 2021
 echo Version !WRAPPER_VER!
 echo:
 
@@ -123,7 +123,7 @@ if !VERBOSEWRAPPER!==n (
 	echo:
 )
 
-title GoAniFire: Off Duty v!WRAPPER_VER! [Checking dependencies...]
+title GoAnimate Offline v!WRAPPER_VER! [Checking dependencies...]
 
 :: Preload variables
 set NEEDTHEDEPENDERS=n
@@ -296,7 +296,7 @@ if !NEEDTHEDEPENDERS!==y (
 	goto skip_dependency_install
 )
 
-title GoAniFire: Off Duty v!WRAPPER_VER! [Installing dependencies...]
+title GoAnimate Offline v!WRAPPER_VER! [Installing dependencies...]
 
 :: Preload variables
 set INSTALL_FLAGS=ALLUSERS=1 /norestart
@@ -323,17 +323,17 @@ if !ADMINREQUIRED!==y (
 			echo:
 			if !FLASH_DETECTED!==n (
 				if !NODEJS_DETECTED!==n (
-					echo GoAniFire: Off Duty needs to install Flash and Node.js.
+					echo GoAnimate Offline needs to install Flash and Node.js.
 				) else (
-					echo WGoAniFire: Off Duty needs to install Flash.
+					echo GoAnimate Offline needs to install Flash.
 				)
 			) else (
-				echo GoAniFire: Off Duty needs to install Node.js.
+				echo GoAnimate Offline needs to install Node.js.
 			)
 			echo To do this, it must be started with Admin rights.
 			echo:
-			echo Close this window and re-open GoAniFire: Off Duty as an Admin.
-			echo ^(right-click start_wrapper.bat and click "Run as Administrator"^)
+			echo Close this window and re-open GoAnimate Offline as an Admin.
+			echo ^(right-click start_goanimateoffline.bat and click "Run as Administrator"^)
 			echo:
 			if !DRYRUN!==y (
 				echo ...yep, dry run is going great so far, let's skip the exit
@@ -392,7 +392,7 @@ if !FLASH_DETECTED!==n (
 	)
 
 	:escape_browser_ask
-	echo To install Flash Player, GoAniFire: Off Duty must kill any currently running web browsers.
+	echo To install Flash Player, GoAnimate Offline must kill any currently running web browsers.
 	echo Please make sure any work in your browser is saved before proceeding.
 	echo GoAniFire: Off Duty will not continue installation until you press a key.
 	echo:
@@ -465,7 +465,7 @@ if !NODEJS_DETECTED!==n (
 			goto after_nodejs_install
 		)
 		echo Proper Node.js installation doesn't seem possible to do automatically.
-		echo You can just keep clicking next until it finishes, and GoAnimate 2016: Offline will continue once it closes.
+		echo You can just keep clicking next until it finishes, and GoAnimate Offline will continue once it closes.
 		if !DRYRUN!==n ( msiexec /i "utilities\installers\node_windows_x64.msi" !INSTALL_FLAGS! )
 		goto nodejs_installed
 	)
@@ -473,7 +473,7 @@ if !NODEJS_DETECTED!==n (
 		if !VERBOSEWRAPPER!==y ( echo 32-bit system detected, installing 32-bit Node.js. )
 		if not exist "utilities\installers\node_windows_x32.msi" (
 			echo We have a problem. The 32-bit Node.js installer doesn't exist.
-			echo A normal copy of  GoAniFire: Off Duty should come with one.
+			echo A normal copy of  GoAnimate Offline should come with one.
 			echo You should be able to find a copy on this website:
 			echo https://nodejs.org/en/download/
 			echo Although Node.js is needed, Offline will try to install anything else it can.
@@ -488,7 +488,7 @@ if !NODEJS_DETECTED!==n (
 	if !CPU_ARCHITECTURE!==what (
 		echo:
 		echo Well, this is a little embarassing.
-		echo GoAniFire: Off Duty can't tell if you're on a 32-bit or 64-bit system.
+		echo GoAnimate Offline can't tell if you're on a 32-bit or 64-bit system.
 		echo Which means it doesn't know which version of Node.js to install...
 		echo:
 		echo If you have no idea what that means, press 1 to just try anyway.
@@ -566,7 +566,7 @@ if !HTTPSERVER_DETECTED!==n (
 		color cf
 		echo:
 		echo http-server is missing, but somehow Node.js has not been installed yet.
-		echo Seems either the install failed, or GoAniFire: Off Duty managed to skip it.
+		echo Seems either the install failed, or GoAnimate Offline managed to skip it.
 		echo If installing directly from nodejs.org does not work, something is horribly wrong.
 		echo Please ask for help in the #support channel on Discord, or email me.
 		pause
@@ -585,7 +585,7 @@ if !HTTPSCERT_DETECTED!==n (
 	echo:
 	if not exist "server\the.crt" (
 		echo ...except it doesn't exist for some reason.
-		echo GoAniFire: Off Duty requires this to run.
+		echo GoAnimate Offline requires this to run.
 		echo You should get a "the.crt" file from someone else, or redownload Wrapper: Offline.
 		echo Offline has nothing left to do since it can't launch without the.crt, so it will close.
 		pause
@@ -596,8 +596,8 @@ if !HTTPSCERT_DETECTED!==n (
 		fsutil dirty query !systemdrive! >NUL 2>&1
 		if /i not !ERRORLEVEL!==0 (
 			if !VERBOSEWRAPPER!==n ( cls )
-			echo For GoAniFire: Off Duty to work, it needs an HTTPS certificate to be installed.
-			echo If you have administrator privileges, you should reopen start_wrapper.bat as Admin.
+			echo For GoAnimate Offline to work, it needs an HTTPS certificate to be installed.
+			echo If you have administrator privileges, you should reopen start_goanimateoffline.bat as Admin.
 			echo ^(do this by right-clicking start_goanifireoffduty.bat and click "Run as Administrator"^)
 			echo:
 			echo If you can't do that, there's another method, but it's less reliable and is done per-browser.
@@ -679,11 +679,11 @@ echo:
 
 :skip_dependency_install
 
-:::::::::::::::::::::::::::::
-:: Starting GoAnimate 2016 ::
-:::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::
+:: Starting GoAnimate Offline ::
+::::::::::::::::::::::::::::::::
 
-title GoAniFire: Off Duty v!WRAPPER_VER! [Loading...]
+title GoAnimate Offline v!WRAPPER_VER! [Loading...]
 
 :: Close existing node apps
 :: Hopefully fixes EADDRINUSE errors??
@@ -714,15 +714,15 @@ PING -n 6 127.0.0.1>nul
 :: Open Wrapper in preferred browser
 if !INCLUDEDCHROMIUM!==n (
 	if !CUSTOMBROWSER!==n (
-		echo Opening GoAniFire: Off Duty in your default browser...
+		echo Opening GoAnimate Offline in your default browser...
 		if !DRYRUN!==n ( start http://localhost:4343 )
 	) else (
-		echo Opening GoAniFire: Off Duty in your set browser...
+		echo Opening GoAnimate Offline in your set browser...
 		echo If this does not work, you may have set the path wrong.
 		if !DRYRUN!==n ( start !CUSTOMBROWSER! http://localhost:4343 )
 	)
 ) else (
-	echo Opening GoAniFire: Off Duty using included Chromium...
+	echo Opening GoAnimate Offline using included Chromium...
 	pushd utilities\ungoogled-chromium
 	if !APPCHROMIUM!==y (
 		if !DRYRUN!==n ( start chrome.exe --user-data-dir=the_profile --app=http://localhost:4343 )
@@ -732,21 +732,21 @@ if !INCLUDEDCHROMIUM!==n (
 	popd
 )
 
-echo GoAniFire: Off Duty has been started^^! The video list should now be open.
+echo GoAnimate Offline has been started^^! The video list should now be open.
 
 ::::::::::::::::
 :: Post-Start ::
 ::::::::::::::::
 
-title GoAniFire: Off Duty v!WRAPPER_VER!
+title GoAnimate Offline v!WRAPPER_VER!
 if !VERBOSEWRAPPER!==y ( goto wrapperstarted )
 :wrapperstartedcls
 cls
 :wrapperstarted
 
 echo:
-echo GoAniFire: Off Duty v!WRAPPER_VER! running
-echo A project from VisualPlugin adapted by TonyAniFire
+echo GoAnimate Offline v!WRAPPER_VER! running
+echo A project from VisualPlugin adapted by Joseph Animate 2021
 echo:
 if !VERBOSEWRAPPER!==n ( echo DON'T CLOSE THIS WINDOW^^! Use the quit option ^(0^) when you're done. )
 if !VERBOSEWRAPPER!==y ( echo Verbose mode is on, see the two extra CMD windows for extra output. )
@@ -796,14 +796,14 @@ echo Time to choose. && goto wrapperidle
 :reopen_webpage
 if !INCLUDEDCHROMIUM!==n (
 	if !CUSTOMBROWSER!==n (
-		echo Opening GoAniFire: Off Duty in your default browser...
+		echo Opening GoAnimate Offline in your default browser...
 		start http://localhost:4343
 	) else (
-		echo Opening GoAniFire: Off Duty in your set browser...
+		echo Opening GoAnimate Offline in your set browser...
 		start !CUSTOMBROWSER! http://localhost:4343 >nul
 	)
 ) else (
-	echo Opening GoAniFire: Off Duty using included Chromium...
+	echo Opening GoAnimate Offline using included Chromium...
 	pushd utilities\ungoogled-chromium
 	if !APPCHROMIUM!==y (
 		start chrome.exe --user-data-dir=the_profile --app=http://localhost:4343 >nul
@@ -978,7 +978,7 @@ goto wrapperidle
 :: Confirmation before shutting down
 :exitwrapperconfirm
 echo:
-echo Are you sure you want to quit GoAniFire: Off Duty?
+echo Are you sure you want to quit GoAnimate Offline?
 echo Be sure to save all your work.
 echo Type Y to quit, and N to go back.
 :exitwrapperretry
@@ -1004,19 +1004,19 @@ if !VERBOSEWRAPPER!==y (
 )
 
 :: This is where I get off.
-echo GoAniFire: Off Duty has been shut down.
+echo GoAnimate Offline has been shut down.
 if !FUCKOFF!==y ( echo You're a good listener. )
 echo This window will now close.
 if !INCLUDEDCHROMIUM!==y (
 	echo You can close the web browser now.
 )
-echo Open start_goanifireoffduty.bat again to start G:OD again.
+echo Open start_goanimateoffline.bat again to start G:OD again.
 if !DRYRUN!==y ( echo Go wet your run next time. ) 
 pause & exit
 
 :exitwithstyle
-title GoAniFire: Off Duty v!WRAPPER_VER! [Shutting down... WITH STYLE]
-echo SHUTTING DOWN THE WRAPPER OFFLINE
+title GoAnimate Offline v!WRAPPER_VER! [Shutting down... WITH STYLE]
+echo SHUTTING DOWN THE GOANIMATE OFFLINE
 PING -n 3 127.0.0.1>nul
 color 9b
 echo BEWEWEWEWWW PSSHHHH KSHHHHHHHHHHHHHH
@@ -1024,11 +1024,11 @@ PING -n 3 127.0.0.1>nul
 TASKKILL /IM node.exe /F
 echo NODE DOT JS ANNIHILATED
 PING -n 3 127.0.0.1>nul
-echo TIME TO ELIMINATE WRAPPER OFFLINE
+echo TIME TO ELIMINATE GOANIMATE OFFLINE
 PING -n 3 127.0.0.1>nul
 echo BOBOOBOBMWBOMBOM SOUND EFFECTSSSSS
 PING -n 3 127.0.0.1>nul
-echo WRAPPER OFFLINE ALSO ANNIHILA
+echo GOANIMATE OFFLINE ALSO ANNIHILA
 PING -n 2 127.0.0.1>nul
 exit
 
@@ -1049,7 +1049,7 @@ goto grr
 
 :configcopy
 if not exist utilities ( md utilities )
-echo :: GoAniFire: Off Duty Config>> utilities\config.bat
+echo :: GoAnimate Offline Config>> utilities\config.bat
 echo :: This file is modified by settings.bat. It is not organized, but comments for each setting have been added.>> utilities\config.bat
 echo :: You should be using settings.bat, and not touching this. Offline relies on this file remaining consistent, and it's easy to mess that up.>> utilities\config.bat
 echo:>> utilities\config.bat
