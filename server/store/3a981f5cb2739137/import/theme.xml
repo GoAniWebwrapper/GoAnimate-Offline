@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme id="import" name="Imported Assets" cc_theme_id="import">
+<!--Sorry that there's no indenting, I couldn't get the import script to keep that.-->
+<!--Also, be sure to leave a blank line before <theme>, otherwise the import script breaks.-->
+<char id="327068788" name="the benson apparition" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
+<tags>family,every,copy,of,wrapper,offline,is,_free,software,but,is,also,_cat:personalized</tags>
+</char>
+<sound id="ColBreakz - 5000.mp3" name="Wecome" subtype="bgmusic" duration="260154" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="ColBreakz - Connected.mp3" name="Goodbye" subtype="soundeffect" duration="99422" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Desktop 7-30-2020 3-46-32 PM-653.png" name="Pic" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Alarm sound effects - modern alarm 1 (192  kbps)2.mp3" name="Alarm" subtype="soundeffect" duration="120032" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Kevin MacLeod _ The House of Leaves (192  kbps).mp3" name="Hunted" subtype="bgmusic" duration="206524" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="bandicam 2020-10-04 15-04-59-287.mp3" name="Red Alert And Bomb FX" subtype="soundeffect" duration="41208" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="bandicam 2020-10-04 15-06-55-426.mp3" name="Hypersnow And Snow FX" subtype="soundeffect" duration="46488" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="HS.mp3" name="HyperSnow FX" subtype="soundeffect" duration="6608" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Alarm Evacuate Building SOUND EFFECT.mp3.mp3" name="Red Alert FX" subtype="soundeffect" duration="188945" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume11 (1).png" name="Spiffy Pasha.EXE" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume5.png" name="Spiffy Pasta Normal Frown" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume11.png" name="Spiffy Pasta mad talk" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume10.png" name="Spiffy Pasta Mad " holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume4 (2).png" name="Spiffy Pasha Talk Frown" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume1 (15).png" name="Spiffy Pasta Stand2" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Roar.mp3" name="Graaaaaaaaaaaaaaa" subtype="soundeffect" duration="10488" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume11 (2).png" name="Creepypasta Spiffy Pasta.EXE" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="costume14 (1).png" name="Super Charged Spiffy Pasta.EXE" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="1200px-Goanimate_logo_2013 (5).png" name="GoAnimate" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-10-10 20-11-57-469.jpg" name="Angeyyyyy" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-10-10 20-12-10-092.jpg" name="Rages" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Scary Sound (For 666 Punishment) (Download Link in Description).mp3" name="AAAHAAAAHHAAAHHH" subtype="soundeffect" duration="23066" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Scary Sound (For Scariest Punishments) (Download Link in Description).mp3" name="Jumpscared2" subtype="soundeffect" duration="61936" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="eruption crater punishment test (1).mp3" name="Jumpscared3" subtype="soundeffect" duration="147617" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Scary Sound Effect #3.mp3" name="Jumpscared4" subtype="soundeffect" duration="59193" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="image0.png" name="Proof" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-02-23 21-16-28-173.png" name="Thumb1" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-03-16 23-00-52-811.png" name="Thumb2" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-03-16 22-59-38-999.png" name="Thumb3" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-03-16 23-25-04-900.png" name="Thumb4" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-04-05 15-05-01-247.png" name="Thumb5" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-03-18 03-32-51-092.png" name="Thumb7" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-02-29 16-14-30-618.png" name="Thumb56789" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-02-29 16-30-25-215.png" name="Thumb10" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-08-29 02-00-48-558.png" name="Thumb34543" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Desktop 4-6-2020 6-22-52 PM-293.png" name="2345432" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-03-18 04-04-43-557.png" name="Thumb232134" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-02-19 20-47-37-416.png" name="thumb5654565" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="bandicam 2020-11-11 00-10-49-170.mp3" name="Jumpscared666" subtype="soundeffect" duration="23424" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="bandicam 2020-11-11 00-30-01-722.mp3" name="Jumpscared999" subtype="soundeffect" duration="20160" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="bandicam 2020-11-11 00-29-31-174.mp3" name="Jumpscared.EXE" subtype="soundeffect" duration="20568" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-10-09 14-36-26-159.png" name="Thumb454334" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Desktop 7-30-2020 3-47-05 PM-894.png" name="Sence55" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Desktop 7-30-2020 3-46-32 PM-653.png" name="Image23" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Desktop 7-30-2020 3-49-57 PM-425.png" name="Image24" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Desktop 7-30-2020 3-48-37 PM-235.png" name="Image25" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-05-10 03-12-29-320.png" name="Image27" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-06-08 12-30-56-336 - Copy.png" name="Image28" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Desktop 6-29-2020 3-11-56 PM-361.png" name="Image30" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-02-29 16-21-20-237.png" name="Image32" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-02-19 20-53-03-496.png" name="Image56" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-03-54-254.jpg" name="Proof1" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-20-14-034.jpg" name="Proof2" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-20-20-880.jpg" name="Proof3" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-20-30-106.jpg" name="Proof4" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-22-02-326.jpg" name="Proof5" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-22-12-123.jpg" name="Proof7" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-02-39-028.jpg" name="Proof8" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-11-12 21-42-28-958.jpg" name="Proof10" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Sneaky Snitch.mp3" name="incompetech Sneaky Snitch" subtype="bgmusic" duration="136620" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="GA2016OFFLINE Error.jpg" name="Error" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Crash Large-SoundBible.com-2049318973.mp3" name="Crash Large" subtype="soundeffect" duration="2716" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="Fireworks And Crowd-SoundBible.com-81665534.mp3" name="Happy new year" subtype="soundeffect" duration="5407" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-12-28 10-31-45-953.jpg" name="My desktop" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="5a5773db1c992a034569ab92.png" name="Barney" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-12-28 10-31-45-953.jpg" name="Desktop copy" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="bandicam 2020-12-28 10-31-45-953.jpg" name="Screen capture" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Capture Of Screen.jpg" name="random" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="desktop.jpg" name="Desktop" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="585e470ecb11b227491c337d.png" name="Mouse Cursor" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="Error Message.png" name="Windows Error" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="windows 10 error.mp3" name="Windows 10 Error Sound" subtype="soundeffect" duration="2821" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="shutdown.jpg.eeb8a2adb9dc03eac731f9be7b42b1ba-1024x516-1.jpg" name="Shut Down Screen Windows 10" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="windows-10-logo-png-transparent.png" name="Windows 10 Logo" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="chain-clipart-handcuff-8.png" name="Handcuff" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="970-9705512_police-car.png" name="Ford Cop Car" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="adobe-flash-player-logo-png-transparent.png" name="Flash Player Logo" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="request slip.jpg" name="Joseph the animator" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="newadamwalkingmp3.mp3" name="New Adam Walking" subtype="soundeffect" duration="6034" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="youneedtoshutthefup.mp3" name="You Need to Shut the F Up Cencored" subtype="soundeffect" duration="4127" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="happybdayplotagon.mp3" name="Plotagon - Happy Birthday" subtype="bgmusic" duration="140252" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="jamesisgroundedbyshoutymp3.mp3" name="Voice1" subtype="soundeffect" duration="45792" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="jamesisyelledatbyscaryvoicemp3.mp3" name="Voice2" subtype="soundeffect" duration="31425" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="966eaea17d268fd48e752b11a8574c78.png" name="GoAnimate Icon" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="goavyondlogo.png" name="GoAnimate Vyond Logo" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="fatcontrollersong.mp3" name="Fat Controller Song" subtype="bgmusic" duration="31425" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="saeedthega2021thenoob.mp3" name="Siberia Strong V2" subtype="bgmusic" duration="61806" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="98765432.png" name="2013-2018 GoAnimate Logo" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="vyondlogolegacy.png" name="Vyond Legacy Logo" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="5c434c10e39d5d01c21da943.png" name="Crumpled Paper Ball" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<prop id="logo.png" name="GoAniFire Logo" holdable="0" wearable="0" placeable="1" facing="left" thumb="" aid="9004" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="windowbreaking.mp3" name="Window Breaking" subtype="soundeffect" duration="4310" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="eassound.mp3" name="EAS Sound" subtype="soundeffect" duration="21316" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<sound id="gunfire.mp3" name="Gun Fire" subtype="soundeffect" duration="3744" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+
+</theme>
