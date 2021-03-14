@@ -1,4 +1,4 @@
-title GoAniFire: Off Duty Settings Script
+title GoAnimate Offline Settings Script
 :: Interactive config.bat changer
 :: Author: benson#0411
 :: License: MIT
@@ -13,10 +13,10 @@ SETLOCAL ENABLEDELAYEDEXPANSION
 pushd "%~dp0"
 if !errorlevel! NEQ 0 goto error_location
 if not exist utilities\config.bat ( goto error_location )
-if not exist start_goanifireoffduty.bat ( goto error_location )
+if not exist start_goanimateoffline.bat ( goto error_location )
 goto noerror_location
 :error_location
-echo Doesn't seem like this script is in the Wrapper: Offline folder.
+echo Doesn't seem like this script is in the GoAnimate Offline folder.
 goto end
 :noerror_location
 
@@ -98,7 +98,7 @@ if exist "wrapper\static\info-nowave.json" (
 	echo ^(5^) Waveforms are[91m OFF [0m
 )
 :: Character solid archive
-if exist "server\characters\characters.zip" (
+if exist "server\characters" (
 	echo ^(6^) Original LVM Character IDs are[91m OFF [0m
 )
 :: Dev options
@@ -207,10 +207,10 @@ if "!choice!"=="?5" (
 	goto reaskoptionscreen
 )
 :: Character solid archive
-if exist "server\characters\characters.zip" (
+if exist "server\characters" (
 	if "!choice!"=="6" goto extractchars
 	if "!choice!"=="?6" (
-		echo When first getting GoAniFire: Off Duty, all non-stock characters are put into a single zip file.
+		echo When first getting GoAnimate Offline, all non-stock characters are put into a single zip file.
 		echo This is because if they're all separate, extracting takes forever and is incredibly annoying.
 		echo If you wish to import characters made on the LVM when it was still up and hosted by Vyond,
 		echo you can extract them here. They will still be compressed, just in separate files to be usable.
@@ -429,7 +429,7 @@ goto optionscreen
 :: Extract Characters ::
 ::::::::::::::::::::::::
 :extractchars
-if exist "server\characters\characters.zip" (
+if exist "server\characters" (
 	echo Are you sure you wish to enable original LVM character IDs?
 	echo This will take a while, depending on your computer.
 	echo Characters will still be compressed, just put into separate usable files.
@@ -449,8 +449,8 @@ if exist "server\characters\characters.zip" (
 	echo Please do not close this window!
 	echo It's likely not frozen, it just takes a while.
 	echo:
-	utilities\7za.exe e server\characters\characters.zip -y -o server\characters
-	del /q server\characters\characters.zip
+	utilities\7za.exe e server\characters -y -o server\characters
+	del /q server\characters
 )
 goto optionscreen
 
