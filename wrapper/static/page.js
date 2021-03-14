@@ -149,46 +149,65 @@ module.exports = function (req, res, url) {
 			}
 		</style>
 	</head>
-	
-	<header id="header">
-		<a href="/"><h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.png" alt="Wrapper: Offline"/></h1>
-		<nav id="headbuttons">
-			<a class="button_small" href="./list.html">VIDEO LIST</a>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">CREATE A CHARACTER</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr>
-					<h2>Anime</h2>
-					<a href="/cc?themeId=anime&bs=guy">Guy</a>
-					<a href="/cc?themeId=anime&bs=girl">Girl</a>
-					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr>
-					<h2>Peepz</h2>
-					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">BROWSE CHARACTERS</div>
-				<nav class="dropdown_menu">
-					<a href="/cc_browser?themeId=family">Comedy World</a>
-					<a href="/cc_browser?themeId=anime">Anime</a>
-					<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-					<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-					<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-					<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
-		</nav>
-	</header>
+		<div id="header">
+	<div class="header-bg"></div>
+	<div class="header-inside">
+		<a class="site-logo" href="http://web.archive.org/web/20130116083755/http://goanimate.com/" title="GoAnimate">
+			<img alt="Make a Video Online with GoAnimate.com" src="http://web.archive.org/web/20130116083755im_/http://lightspeed.goanimate.com/static/396/go/img/header/make-video-goanimate.png"/>
+		</a>
+
+        <div id="headertopnavmenu" class="globalnav">
+	<ul id="top_nav" class="header_block">
+		<li class="top_nav_item create">
+			<a href="/go_full">Make a Video</a>
+		</li>
+		<li class="top_nav_item explore">
+			<a href="http://web.archive.org/web/20130116083755/http://goanimate.com/videos">Explore</a>
+			<ul class="top_nav_submenu">
+				<li class="first"><div class="arrow"></div><a href="./list.html">Videos</a></li>
+				<li><a href="http://web.archive.org/web/20130116083755/http://goanimate.com/mingle">Community</a></li>
+				<li><a href="http://web.archive.org/web/20130116083755/http://goanimate.com/forums">Forums</a></li>
+				<li><a href="http://web.archive.org/web/20130116083755/http://goanimate.com/video-maker-tips">Video Maker Tips</a></li>
+				<li><a href="http://web.archive.org/web/20130116083755/http://goanimate.com/search">Search</a></li>
+			</ul>
+		</li>
+		<li class="top_nav_item upgrade">
+			<a href="http://web.archive.org/web/20130116083755/http://goanimate.com/plusfeatures/?hook=header_button.site">Upgrade <img class="upgrade-arrow" src="http://web.archive.org/web/20130116083755im_/http://lightspeed.goanimate.com/static/396/go/img/spacer.gif" alt=""/></a>
+			<ul class="top_nav_submenu">
+				<li><a href="http://goanimate4workgroups.herokuapp.com">GoAnimate for Business</a></li>
+				<li><a href="http://goanimate4schools.herokuapp.com">GoAnimate for Schools</a></li>
+			</ul>
+		</li>
+	</ul>
+
+<!--[if lte IE 6]>
+<script type="text/javascript">
+jQuery('#top_nav li').bind('mouseover', function(e) {
+	jQuery(this).addClass('hover');
+});
+jQuery('#top_nav li').bind('mouseout', function(e) {
+	jQuery(this).removeClass('hover');
+});
+jQuery('.money').bind('mouseover', function(e) {
+	jQuery(this).addClass('hover');
+});
+jQuery('.money').bind('mouseout', function(e) {
+	jQuery(this).removeClass('hover');
+});
+</script>
+<![endif]-->
+        </div>
+	</div>
+</div>
+
+
+
+<div class="container">
+
+    <div id="feedback_block" style="display:none;">
+	    <div id="feedback" align="center" class="info">
+			    </div>
+    </div>
 	
 	<body style="margin:0px" onload="hideHeader()">${toObjectString(attrs, params)
 		}</body>${stuff.pages[url.pathname] || ''}`);
