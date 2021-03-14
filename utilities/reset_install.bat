@@ -1,6 +1,6 @@
-title Wrapper: Offline Reset Script
+title GoAnimate Offline Reset Script
 :: Resets any changed files to make a fresh install, meant for devs making a new release
-:: Author: benson#0411
+:: Author: joseph the animator#2292
 :: License: MIT
 
 :: Initialize (stop command spam, clean screen, make variables work, set to UTF-8)
@@ -17,7 +17,7 @@ if not exist utilities\reset_install.bat ( goto error_location )
 if not exist wrapper ( goto error_location )
 goto noerror_location
 :error_location
-echo Doesn't seem like this script is in Wrapper: Offline's utilities folder.
+echo Doesn't seem like this script is in GoAnimate Offline's utilities folder.
 goto end
 :noerror_location
 
@@ -43,7 +43,7 @@ set ERROR_DELSAVE=n
 set ERROR_DELSILENTCMD=n
 
 :: Confirmation
-echo Are you sure you'd like to reset Wrapper: Offline?
+echo Are you sure you'd like to reset GoAnimate Offline?
 echo This will remove all saved videos and characters.
 echo You should only use this if you're a dev or one told you to do it.
 echo This decision is permanent, and can't be reversed.
