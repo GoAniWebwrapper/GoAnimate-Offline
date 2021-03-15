@@ -1,7 +1,7 @@
 :: GoAnimate Offline Launcher Remastered
 :: Author: joseph the animator#2292
 set JA_VER=1.0.0
-title JewmberAnimate %JA_VER% [Initializing...]
+title GoAnimate Offline %JA_VER% [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
