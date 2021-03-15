@@ -141,7 +141,7 @@ module.exports = function (req, res, url) {
 				}
 			}
 		</script>
-		<link rel="stylesheet" type="text/css" href="https://goanimaterevival.herokuapp.com/pages/css/global2011.css">
+		<link rel="stylesheet" type="text/css" href="/pages/css/global2011.css">
 		<style>
 			body {
 				background: #eee;
