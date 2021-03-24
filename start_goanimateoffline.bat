@@ -1,7 +1,8 @@
-:: GoAnimate Offline Launcher Remastered
+:: GoAnimate Offline Launcher
 :: Author: joseph the animator#2292
-set JA_VER=1.0.0
-title GoAnimate Offline %JA_VER% [Initializing...]
+:: License: MIT
+set WRAPPER_VER=1.2.3
+title GoAnimate Offline v%WRAPPER_VER% [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -45,11 +46,47 @@ if not exist server ( goto error_location )
 :: Create checks folder if nonexistent
 if not exist "utilities\checks" md utilities\checks
 
+:: Operator, attention!
+if not exist "utilities\checks\disclaimer.txt" (
+	echo DISCLAIMER
+  echo:
+	echo GoAnimate Offline is a project to preserve the original GoAnimate flash-based themes.
+	echo We believe they should be archived for others to use and learn about in the future.
+	echo All business themes have been removed, please use Vyond Studio if you wish to get those.
+	echo This is still unlawful use of copyrighted material, but ^(in our opinion^) morally justifiable use.
+	echo:
+	echo We are not affiliated in any form with Vyond or GoAnimate Inc. We generate no profit from this.
+	echo We do not wish to promote piracy, and we avoid distributing content that is still in use by GoAnimate Inc.
+	echo We have tried to reduce any harm we could do to GoAnimate Inc while making this project.
+	echo:
+	echo Excluding Adobe Flash and GoAnimate Inc's assets, Wrapper: Offline is free/libre software.
+	echo You are free to redistribute and/or modify it under the terms of the MIT ^(aka Expat^) license,
+	echo except for some dependencies which have different licenses with slightly different rights.
+	echo Read the LICENSE file in Offline's base folder and the licenses in utilities/sourcecode for more info.
+	echo:
+	echo By continuing to use GoAnimate Offline, you acknowledge the nature of this project, and your right to use it.
+	echo If you object to any of this, feel free to close Wrapper: Offline now.
+	echo You will be allowed to accept 20 seconds after this message has appeared.
+	echo: 
+	PING -n 21 127.0.0.1>nul
+	echo If you still want to use GoAnimate Offline, press Y. If you no longer want to, press N.
+	:disclaimacceptretry
+	set /p ACCEPTCHOICE= Response:
+	echo:
+	if not '!acceptchoice!'=='' set acceptchoice=%acceptchoice:~0,1%
+	if /i "!acceptchoice!"=="y" goto disclaimaccepted
+	if /i "!acceptchoice!"=="n" exit
+	goto disclaimacceptretry
+	:disclaimaccepted
+	echo: 
+	echo Sorry for all the legalese, let's get back on track.
+	echo You've accepted the disclaimer. To reread it, remove this file. > utilities\checks\disclaimer.txt
+)
 
 :: Welcome, Director Ford!
-echo GoAnimate Offline
-echo A project from VisualPlugin and Benson adapted by Joseph Animate 2021
-echo Version !JA_VER!
+echo Wrapper: Offline
+echo A project from VisualPlugin adapted by Joseph Animate 2021
+echo Version !WRAPPER_VER!
 echo:
 
 :: Confirm measurements to proceed.
@@ -86,7 +123,7 @@ if !VERBOSEWRAPPER!==n (
 	echo:
 )
 
-title GoAnimate Offline !JA_VER! [Checking dependencies...]
+title Wrapper: Offline v!WRAPPER_VER! [Checking dependencies...]
 
 :: Preload variables
 set NEEDTHEDEPENDERS=n
@@ -259,7 +296,7 @@ if !NEEDTHEDEPENDERS!==y (
 	goto skip_dependency_install
 )
 
-title GoAnimate Offline !JA_VER! [Installing dependencies...]
+title GoAnimate v!WRAPPER_VER! [Installing dependencies...]
 
 :: Preload variables
 set INSTALL_FLAGS=ALLUSERS=1 /norestart
@@ -295,8 +332,8 @@ if !ADMINREQUIRED!==y (
 			)
 			echo To do this, it must be started with Admin rights.
 			echo:
-			echo Close this window and re-open GoAnimate Offline as an Admin.
-			echo ^(right-click start_goanimateoffline.bat and click "Run as Administrator"^)
+			echo Close this window and re-open Wrapper: Offline as an Admin.
+			echo ^(right-click start_wrapper.bat and click "Run as Administrator"^)
 			echo:
 			if !DRYRUN!==y (
 				echo ...yep, dry run is going great so far, let's skip the exit
@@ -321,7 +358,7 @@ if !FLASH_DETECTED!==n (
 		echo What web browser do you use? If it isn't here,
 		echo look up whether it's based on Chromium or Firefox.
 		echo If it's not based on either, then
-		echo GoAnimate Offline will not be able to install Flash.
+		echo Wrapper: Offline will not be able to install Flash.
 		echo Unless you know what you're doing and have a
 		echo version of Flash made for your browser, please
 		echo install a Chrome or Firefox based browser.
@@ -399,7 +436,7 @@ if !FLASH_DETECTED!==n (
 			echo A normal copy of GoAnimate Offline should come with one.
 			echo You may be able to find a copy on this website:
 			echo https://helpx.adobe.com/flash-player/kb/archived-flash-player-versions.html
-			echo Although Flash is needed, GoAnimate Offline will try to install anything else it can.
+			echo Although Flash is needed, Offline will try to install anything else it can.
 			pause
 			goto after_flash_install
 		)
@@ -423,12 +460,12 @@ if !NODEJS_DETECTED!==n (
 			echo A normal copy of GoAnimate Offline should come with one.
 			echo You should be able to find a copy on this website:
 			echo https://nodejs.org/en/download/
-			echo Although Node.js is needed, GoAnimate Offline will try to install anything else it can.
+			echo Although Node.js is needed, Offline will try to install anything else it can.
 			pause
 			goto after_nodejs_install
 		)
 		echo Proper Node.js installation doesn't seem possible to do automatically.
-		echo You can just keep clicking next until it finishes, and JewmberAnimate will continue once it closes.
+		echo You can just keep clicking next until it finishes, and GoAnimate Offline will continue once it closes.
 		if !DRYRUN!==n ( msiexec /i "utilities\installers\node_windows_x64.msi" !INSTALL_FLAGS! )
 		goto nodejs_installed
 	)
@@ -436,10 +473,10 @@ if !NODEJS_DETECTED!==n (
 		if !VERBOSEWRAPPER!==y ( echo 32-bit system detected, installing 32-bit Node.js. )
 		if not exist "utilities\installers\node_windows_x32.msi" (
 			echo We have a problem. The 32-bit Node.js installer doesn't exist.
-			echo A normal copy of JewmberAnimate should come with one.
+			echo A normal copy of GoAnimate Offline should come with one.
 			echo You should be able to find a copy on this website:
 			echo https://nodejs.org/en/download/
-			echo Although Node.js is needed, GoAnimate Offline will try to install anything else it can.
+			echo Although Node.js is needed, Offline will try to install anything else it can.
 			pause
 			goto after_nodejs_install
 		)
@@ -451,7 +488,7 @@ if !NODEJS_DETECTED!==n (
 	if !CPU_ARCHITECTURE!==what (
 		echo:
 		echo Well, this is a little embarassing.
-		echo JewmberAnimate can't tell if you're on a 32-bit or 64-bit system.
+		echo Wrapper: Offline can't tell if you're on a 32-bit or 64-bit system.
 		echo Which means it doesn't know which version of Node.js to install...
 		echo:
 		echo If you have no idea what that means, press 1 to just try anyway.
@@ -499,10 +536,10 @@ if !HTTPSERVER_DETECTED!==n (
 			echo:
 			if not exist "utilities\installers\http-server-master" (
 				echo Well, we'd try that if the files existed.
-				echo A normal copy of JewmberAnimate should come with them.
+				echo A normal copy of Wrapper: Offline should come with them.
 				echo You should be able to find a copy on this website:
 				echo https://www.npmjs.com/package/http-server
-				echo Although http-server is needed, JewmberAnimate will try to install anything else it can.
+				echo Although http-server is needed, Offline will try to install anything else it can.
 				pause
 				goto after_nodejs_install
 			)
@@ -549,8 +586,8 @@ if !HTTPSCERT_DETECTED!==n (
 	if not exist "server\the.crt" (
 		echo ...except it doesn't exist for some reason.
 		echo GoAnimate Offline requires this to run.
-		echo You should get a "the.crt" file from someone else, or redownload GoAnimate Offline.
-		echo JewmberAnimate has nothing left to do since it can't launch without the.crt, so it will close.
+		echo You should get a "the.crt" file from someone else, or redownload Wrapper: Offline.
+		echo Offline has nothing left to do since it can't launch without the.crt, so it will close.
 		pause
 		exit
 	)
@@ -625,7 +662,7 @@ if !ADMINREQUIRED!==y (
 	echo please restart normally by double-clicking.
 	echo:
 	echo If you saw this from running normally,
-	echo GoAnimate Offline should continue normally after a restart.
+	echo Wrapper: Offline should continue normally after a restart.
 	echo:
 	if !DRYRUN!==y (
 		echo ...you enjoying the dry run experience? Skipping closing.
@@ -642,31 +679,35 @@ echo:
 
 :skip_dependency_install
 
-::::::::::::::::::::::
-:: Starting Wrapper ::
-::::::::::::::::::::::
+::::::::::::::::::::::::
+:: Starting GoAnimate ::
+::::::::::::::::::::::::
 
-title GoAnimate Offline !JA_VER! [Loading...]
+title GoAnimate Offline v!WRAPPER_VER! [Loading...]
 
 :: Close existing node apps
 :: Hopefully fixes EADDRINUSE errors??
 if !VERBOSEWRAPPER!==y (
-	echo Closing any existing node apps...
+	echo Closing any existing node and/or PHP apps...
 	if !DRYRUN!==n ( TASKKILL /IM node.exe /F )
+	if !DRYRUN!==n ( TASKKILL /IM php.exe /F )
 	echo:
 ) else (
 	if !DRYRUN!==n ( TASKKILL /IM node.exe /F 2>nul )
+	if !DRYRUN!==n ( TASKKILL /IM php.exe /F 2>nul )
 )
 
-:: Start Node.js and http-server
-echo Loading Node.js and http-server...
+:: Start Node.js, http-server and PHP for VFProxy
+echo Loading Node.js, http-server and PHP ^(for VFProxy only^)...
 pushd utilities
 if !VERBOSEWRAPPER!==y (
 	if !DRYRUN!==n ( start /MIN open_http-server.bat )
 	if !DRYRUN!==n ( start /MIN open_nodejs.bat )
+	if !DRYRUN!==n ( start /MIN open_vfproxy_php.bat )
 ) else (
 	if !DRYRUN!==n ( start SilentCMD open_http-server.bat )
 	if !DRYRUN!==n ( start SilentCMD open_nodejs.bat )
+	if !DRYRUN!==n ( start SilentCMD open_vfproxy_php.bat )
 )
 popd
 
@@ -677,15 +718,15 @@ PING -n 6 127.0.0.1>nul
 :: Open Wrapper in preferred browser
 if !INCLUDEDCHROMIUM!==n (
 	if !CUSTOMBROWSER!==n (
-		echo Opening JewmberAnimate in your default browser...
+		echo Opening GoAnimate Offline in your default browser...
 		if !DRYRUN!==n ( start http://localhost:4343 )
 	) else (
-		echo Opening JewmberAnimate in your set browser...
+		echo Opening GoAnimate Offline in your set browser...
 		echo If this does not work, you may have set the path wrong.
 		if !DRYRUN!==n ( start !CUSTOMBROWSER! http://localhost:4343 )
 	)
 ) else (
-	echo Opening JewmberAnimate using included Chromium...
+	echo Opening GoAnimate Offline using included Chromium...
 	pushd utilities\ungoogled-chromium
 	if !APPCHROMIUM!==y (
 		if !DRYRUN!==n ( start chrome.exe --user-data-dir=the_profile --app=http://localhost:4343 )
@@ -701,15 +742,15 @@ echo GoAnimate Offline has been started^^! The video list should now be open.
 :: Post-Start ::
 ::::::::::::::::
 
-title GoAnimate Offline !JA_VER!
+title GoAnimate Offline v!WRAPPER_VER!
 if !VERBOSEWRAPPER!==y ( goto wrapperstarted )
 :wrapperstartedcls
 cls
 :wrapperstarted
 
 echo:
-echo GoAnimate Offline !JA_VER! running
-echo A project from VisualPlugin and Benson adapted by Joseph Animate 2021
+echo GoAnimate Offline v!WRAPPER_VER! running
+echo A project from VisualPlugin adapted by Joseph Animate 2021
 echo:
 if !VERBOSEWRAPPER!==n ( echo DON'T CLOSE THIS WINDOW^^! Use the quit option ^(0^) when you're done. )
 if !VERBOSEWRAPPER!==y ( echo Verbose mode is on, see the two extra CMD windows for extra output. )
@@ -722,7 +763,7 @@ echo Enter 2 to import a file
 echo Enter 3 to open the server page
 echo Enter ? to open the FAQ
 echo Enter clr to clean up the screen
-echo Enter 0 to close JewmberAnimate
+echo Enter 0 to close Wrapper: Offline
 set /a _rand=(!RANDOM!*67/32768)+1
 if !_rand!==25 echo Enter things you think'll show a secret if you're feeling adventurous
 :wrapperidle
@@ -750,6 +791,10 @@ if /i "!choice!"=="watch benson on youtube" goto w_a_t_c_h
 if /i "!choice!"=="browser slayer" goto slayerstestaments
 if /i "!choice!"=="patch" goto patchtime
 if /i "!choice!"=="random" goto sayarandom
+if /i "!choice!"=="narutofan420" echo i am narutofan420 i am a naruto fan i watch naruto i watched all 3 series and still watch it & goto wrapperidle
+if /i "!choice!"=="die" echo die please & goto wrapperidle
+if /i "!choice!"=="aaron doan" echo YOU^^!^^!^^! Noo Wrapper Is Patched Forever^^!^^!^^! Cries And Hits You So Many Times & goto wrapperidle
+if /i "!choice!"=="spark" echo WHY DID SOMEONE FUCK UP THE LAUNCHER? & goto wrapperidle
 :: dev options
 if /i "!choice!"=="amnesia" goto wipe_save
 if /i "!choice!"=="restart" goto restart
@@ -800,8 +845,8 @@ goto wrapperidle
 
 :open_files
 pushd ..
-echo Opening the GoAnimate Offline folder...
-start explorer.exe GoAnimate Offline
+echo Opening the GoAnimate-offline folder...
+start explorer.exe GoAnimate-offline
 popd
 goto wrapperidle
 
@@ -809,7 +854,7 @@ goto wrapperidle
 echo Opening the importer...
 call utilities\import.bat
 cls
-title JewmberAnimate !JA_VER!
+title GoAnimate Offline v!WRAPPER_VER!
 set JUSTIMPORTED=y
 goto wrapperstartedcls
 
@@ -844,7 +889,7 @@ goto wrapperidle
 
 :patchtime
 echo:
-echo would you like to patch https://78.63.40.199
+echo would you like to patch whoper online
 echo press y or n
 :patchtimeretry
 set /p PATCHCHOICE= Response:
@@ -941,7 +986,7 @@ goto wrapperidle
 :: Confirmation before shutting down
 :exitwrapperconfirm
 echo:
-echo Are you sure you want to quit JewmberAnimate?
+echo Are you sure you want to quit GoAnimate Offline?
 echo Be sure to save all your work.
 echo Type Y to quit, and N to go back.
 :exitwrapperretry
@@ -956,14 +1001,16 @@ echo You must answer Yes or No. && goto exitwrapperretry
 
 :point_extraction
 
-title GoAnimate Offline !JA_VER! [Shutting down...]
+title GoAnimate Offline v!WRAPPER_VER! [Shutting down...]
 
-:: Shut down Node.js and http-server
+:: Shut down Node.js, PHP and http-server
 if !VERBOSEWRAPPER!==y (
 	if !DRYRUN!==n ( TASKKILL /IM node.exe /F )
+	if !DRYRUN!==n ( TASKKILL /IM php.exe /F )
 	echo:
 ) else (
 	if !DRYRUN!==n ( TASKKILL /IM node.exe /F 2>nul )
+	if !DRYRUN!==n ( TASKKILL /IM php.exe /F 2>nul )
 )
 
 :: This is where I get off.
@@ -973,12 +1020,12 @@ echo This window will now close.
 if !INCLUDEDCHROMIUM!==y (
 	echo You can close the web browser now.
 )
-echo Open start_goanimateoffline.bat again to start GoAnimate Offline again.
+echo Open start_goanimateoffline.bat again to start W:O again.
 if !DRYRUN!==y ( echo Go wet your run next time. ) 
 pause & exit
 
 :exitwithstyle
-title GoAnimate Offline !JA_VER! [Shutting down... WITH STYLE]
+title GoAnimate Offline v!WRAPPER_VER! [Shutting down... WITH STYLE]
 echo SHUTTING DOWN THE GOANIMATE OFFLINE
 PING -n 3 127.0.0.1>nul
 color 9b
@@ -987,7 +1034,10 @@ PING -n 3 127.0.0.1>nul
 TASKKILL /IM node.exe /F
 echo NODE DOT JS ANNIHILATED
 PING -n 3 127.0.0.1>nul
-echo TIME TO ELIMINATE GOANIMATE OFFLINE
+TASKKILL /IM php.exe /F
+echo PHP DESTROYED
+PING -n 3 127.0.0.1>nul
+echo TIME TO ELIMINATE WRAPPER OFFLINE
 PING -n 3 127.0.0.1>nul
 echo BOBOOBOBMWBOMBOM SOUND EFFECTSSSSS
 PING -n 3 127.0.0.1>nul
